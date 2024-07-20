@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>Ridgevale Primary School</title>
+		<link type="text/css" rel="stylesheet" href="Styles/ridgevale.css" />
+		<link type="text/css" rel="stylesheet" href="Styles/responsive.css" media="screen and (max-width: 1270px)"/>
+		<link rel="shortcut icon" href="favicon.ico">
+		<style>
+			<!-- Style rules specific to the home page -->
+			
+			.homeIMGSlides {
+				display: none;
+				padding-right: 1%;
+			}
+			
+			.slideshow {
+				position: relative;
+				margin: auto;
+			}
+			
+			.fade {
+				-webkit-animation-name: fade;
+			    -webkit-animation-duration: 15s;
+			    animation-name: fade;
+			    animation-duration: 15s;
+			}
+			
+			@-webkit-keyframes fade {
+			  from {opacity: .9} 
+			  to {opacity: 1}
+			}
+
+			@keyframes fade {
+			  from {opacity: .9} 
+			  to {opacity: 1}
+			}
+			
+			.ssText {
+			    position: absolute;
+				top: 20%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-family: garamond;
+				color: white;
+				font-size: 300%;
+				white-space: nowrap;
+				font-weight: 800;
+			}
+			
+			.ssText2 {
+			    position: absolute;
+				top: 85%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-family: garamond;
+				color: white;
+				width: 93%;
+				font-size: 120%;
+				font-weight: 600;
+			}
+			
+			div.missionbox {
+				background-color: #ffffff;
+				border: 1px solid white;
+				opacity: 0.6;
+			}
+			
+			div.missionbox h1 {
+				color: black;
+				opacity: 1;
+				font-weight: 700;
+				margin-left: 280px;
+				letter-spacing: 2px;
+			}
+			
+			div.background {
+				clear: both;
+				margin-bottom: 20px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<a id="top"></a><!-- Button (on the left-side) that allows users to go back up -->
+		<header class="emblem">
+			<img id="logo" src="images/rpsemblem3.png" alt="School Emblem" width="83%" height="90%" title="Ridgevale Primary School Emblem" /> 
+		</header>
+		<header>
+			<h1 class="organization">Ridgevale Primary School</h1>
+		</header>
+		<nav id="nav2"><!-- Navigation bar below the school name -->
+			<ul class="fivetabs">
+				<li><a href="index.html" id="home" class="current">>Home</a></li>
+				<li><a href="aboutus.html" id="about">About Us</a></li>
+				<li><a href="gallery.html" id="gallery">Gallery</a></li>
+				<li><a href="applications.html" id="admission">Apply For Admission</a></li>
+				<li><a href="news.html" id="news">News</a></li>
+			</ul>
+		</nav>
+		<article id="homeinfo"><!-- Beginning of the main content area of the home page, i.e., slideshow & school vision -->
+			<div class="slideshow"><!-- Slideshow section of the homepage -->
+				<div class="homeIMGSlides fade">
+					<img id="slide1" src="images/hall.jpg" height="480px" width="100%" />
+					<div class="ssText">Welcome to Ridgevale Primary School</div>
+					<div class="ssText2">"Ridgevale Primary is a school renowned for its strong academic record and perhaps best summed up by its motto 'CarpeDiem' - Seize The Day. At Ridgevale, pupils are developed holistically, with the emphasis on achieveing only their best, whether on a sports, academic or social platform."</div>
+				</div>
+				<div class="homeIMGSlides fade">
+					<img id="slide2" src="images/swimmingpool11.jpg" height="480px" width="100%" />
+					<div class="ssText">Welcome to Ridgevale Primary School</div>
+					<div class="ssText2">"Ridgevale Primary is a school renowned for its strong academic record and perhaps best summed up by its motto 'CarpeDiem' - Seize The Day. At Ridgevale, pupils are developed holistically, with the emphasis on achieveing only their best, whether on a sports, academic or social platform."</div>
+				</div>
+				<div class="homeIMGSlides fade">
+					<img id="slide3" src="images/junglegym.jpg" height="480px" width="100%" />
+					<div class="ssText">Welcome to Ridgevale Primary School</div>
+					<div class="ssText2">"Ridgevale Primary is a school renowned for its strong academic record and perhaps best summed up by its motto 'CarpeDiem' - Seize The Day. At Ridgevale, pupils are developed holistically, with the emphasis on achieveing only their best, whether on a sports, academic or social platform."</div>
+				</div>
+			</div>
+			<div class="vision"><!-- School Vision -->
+				<h2>VISION</h2> 
+				<div class="visionIcon">&#128065;</div>
+				<p>Ridgevale Primary School aspires to nurture and enable individual learners to flourish as responsible citizens in an engaging, aspiring and challenging learning environment leading to the fulfilment of each individual's potential within the global community in all its diversity.</p>
+			</div>
+		</article><!-- End of the Main content arear of the home page -->
+		<aside id="cal"><!-- Calendar to the left of the web page -->
+		<div id="calendar">
+			<h2>School Calendar</h2>
+			<button type="button" id="prev">&lt; Previous</button>
+			<button type="button" id="next">Next &gt;</button>
+				<table>
+					<caption></caption>
+					<tr>
+					   <th class="weekend">Sun</th>
+					   <th>Mon</th>
+					   <th>Tue</th>
+					   <th>Wed</th>
+					   <th>Thu</th>
+					   <th>Fri</th>
+					   <th class="weekend">Sat</th>
+					</tr>
+					<tr>
+					   <td name="date"></td><!-- The dates are filled in automatically by JavaScript code -->
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					</tr>
+					<tr>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					</tr>
+					<tr>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					</tr>
+					<tr>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					</tr>
+					<tr>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					</tr>
+					<tr>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					   <td name="date"></td>
+					</tr>
+				</table>
+				<ul class="calendardetail"><!-- To change School Term Cycles, edit -->
+					<li>TERM 1:<br><br>12 January 2022 - 17 March 2022</li><br><!-- Do not forget to change this every term, as it is NOT AUTOMATICALLY updated -->
+				</ul>
+		</div>
+		</aside>
+		<div class="background" style="background-image: url(images/frontoffice.jpg); background-position: 50% 48%;"> <!-- Image that appears in the background of the Mission section --> 
+			<div class="missionbox">
+				<h1>MISSION:</h1>
+				<p>The realisation of our vision will be achieved by:</p>
+				<ul>
+					<li>Ensuring that educators are suitably and well qualified to teach the various subjects as per the prescribed curriculum;</li>
+					<li>Maintaining a balanced approach to academic, cultural and sporting activities;</li>
+					<li>Empowering learners to become life-long learners who are responsible, productive and engaged citizens within the ever-changing diverse global community;</li>
+					<li>Working with the broader community  to establish co-operative relationships by keeping them informed about educational matters and encouraging them to support and become involved in school activities;</li>
+					<li>Empowering learners to cope with both success and failure, and the trials and tribulations of growing up;</li>
+					<li>Up-skilling staff to meet the challenges and demands of an ever-changing learning environment;</li>
+					<li>Providing a safe, caring and happy environment which is conducive to learning.</li>
+				</ul>
+			</div>
+		</div>
+		<a href="#top" class="hide" id="topbttn">^</a>
+		<footer> <!-- School contact details and address at the bottom of the web pages -->
+			<div class="rpsdetails">
+				<div class="labels">
+					<p id="loc">Location<span>&#10162;</span></p>
+					<p id="mail">E-mail<span>&#9993;</span></p>
+					<p id="tel">Phone<span>&#9990;</span></p>
+				</div>
+				<div class="description">
+					<p id="location">106 Wilde Amandel Ave, Roodekrans</p>
+					<p id="email">admin@ridgevale.co.za <br> info@ridgevale.co.za</span></p>
+					<p id="phone">+27 11 764 2918</p>
+				</div>
+			</div>
+			<div class="directions">
+				<span class="rights">Copyright &#169; 2021. All Rights Reserved</span> <a href="https://www.google.com/maps/place/Ridgevale+Primary+School/@-26.1105999,27.8466713,17z/data=!4m12!1m6!3m5!1s0x1e959f20b4e4ba45:0xafe5fec38318d9d8!2sRidgevale+Primary+School!8m2!3d-26.1105999!4d27.84886!3m4!1s0x1e959f20b4e4ba45:0xafe5fec38318d9d8!8m2!3d-26.1105999!4d27.84886" target="Directions">Directions to Ridgevale Primary School</a> <span class="design">Designed By: Oageng Moikabi</span>
+			</div>
+		</footer>
+		
+		<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("homeIMGSlides");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}
+		  slides[slideIndex-1].style.display = "block";
+		  setTimeout(showSlides, 3000); // Change image every 3 seconds
+		}
+		</script>
+		
+		<script src="jquery-1.11.1.min.js"></script>
+        <script src="schoolscript.js"></script>
+	</body>
+</html>
