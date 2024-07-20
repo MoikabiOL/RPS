@@ -1,0 +1,49 @@
+/* responisve style sheet for screens smaller than laptops and desktops */
+
+/* rules for widths between 1120px and 1270px */
+@media screen and (min-width: 70em) {
+
+	header h1 {
+		font-size: 2.5em;
+		padding-top: 20px;
+	}
+	
+	.organization {
+		height: 140px;
+	}
+	
+	nav#nav2 a {
+		font-size: 120%;
+	}
+	
+	div#calendar {
+		display: none;
+	}
+	
+	article#application {
+		width: 95%;
+	}
+	
+	.docsrequired {
+		max-width: 90%;
+	}
+	
+	div#requirements h2, div#requirements h3, div#requirements p {
+		margin-top: 50px;
+		margin-left: 5%;
+	}
+	
+	div.rpsdetails {
+		font-size: 80%;
+		margin-left: 5%;
+	}
+	
+	div.labels {
+		margin-left: -9%;
+	}
+	
+	div.description {
+		margin-left: -2%;
+	}
+	
+}
