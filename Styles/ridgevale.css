@@ -5,8 +5,8 @@ Author: Oageng Moikabi */
 /* style rules for Ridgevalee Primary School emblem positioning */
 .emblem {
 	float: left;
-	/*margin-left: 1.2%;*/
-	/* width: 18.4%; */
+	width: 85%;
+	margin-left: 20px;
 }
 
 /* style rules for Ridgevale Primary School emblem */
