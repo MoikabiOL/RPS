@@ -58,7 +58,7 @@ nav#nav2 a:hover{
 
 /* style rule to match background colour of school emblem*/
 body {
-	background-color: #fcfcfc; /*green;*/
+	background-color: #fcfcfc;
 }
 
 .current {
@@ -363,7 +363,7 @@ div.times ul li {
 
 /* style rule to increase legibilty of previous button and next button*/
 #prev, #next {
-	font-size: 75%;
+	font-size: 80%;
 	font-weight: bold;
     	margin: 0 0 15px 0;
     	border-radius: 20px;
