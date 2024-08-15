@@ -400,6 +400,10 @@ th.weekend {
 	background-color: red;
 }
 
+#calendar table td.currentdate {
+	background-color: blue;
+}
+
 article#application {
 	float: right;
 	width: 78%;
