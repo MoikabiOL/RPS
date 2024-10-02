@@ -66,7 +66,7 @@ function populateCalendar(currentMonth) {
 			dateCells[i].className = "futuredate";
 		} else if (dateToday > dateObject) {
 			dateCells[i].className = "pastdate";
-		} else if (dateToday.getDate() + 1 === dateObject.getDate()) {
+		} else if (dateToday.getDate() === dateObject.getDate() + 1) {
 			dateCells[i].className = "currentdate";
 		}
 		date = dateObject.getDate() + 1;
