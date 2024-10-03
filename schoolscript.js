@@ -62,11 +62,11 @@ function populateCalendar(currentMonth) {
 		//loop to add dates to the cells of the calender table
 		dateCells[i].innerHTML = dateObject.getDate();
 		dateCells[i].className = "date";
-		if (dateToday < dateObject) {
+		if (dateToday.getDate() < dateObject.getDate()) {
 			dateCells[i].className = "futuredate";
-		} else if (dateToday > dateObject) {
+		} else if (dateToday.getDate() > dateObject.getDate()) {
 			dateCells[i].className = "pastdate";
-		} else if (dateToday.getDate() - 1 == dateObject.getDate()) {
+		} else if (dateToday.getDate() == dateObject.getDate()) {
 			dateCells[i].className = "currentdate";
 		}
 		date = dateObject.getDate() + 1;
