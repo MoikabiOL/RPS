@@ -63,11 +63,17 @@ function populateCalendar(currentMonth) {
 		dateCells[i].innerHTML = dateObject.getDate();
 		dateCells[i].className = "date";
 		if (dateToday.getDate() < dateObject.getDate()) {
+			if (dateToday.getMonth() < dateObject.getMonth()) {
 			dateCells[i].className = "futuredate";
+			}
 		} else if (dateToday.getDate() > dateObject.getDate()) {
+			if (dateToday.getMonth() > dateObject.getMonth()) {
 			dateCells[i].className = "pastdate";
+			}
 		} else if (dateToday.getDate() == dateObject.getDate()) {
+			if (dateToday.getMonth() == dateObject.getMonth()) {
 			dateCells[i].className = "currentdate";
+			}
 		}
 		date = dateObject.getDate() + 1;
 		dateObject.setDate(date);
