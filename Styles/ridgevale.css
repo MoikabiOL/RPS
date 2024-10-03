@@ -401,7 +401,7 @@ th.weekend {
 }
 
 #calendar table td.currentdate {
-	background-color: blue;
+	border: solid thin blue;
 }
 
 article#application {
