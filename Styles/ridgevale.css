@@ -397,12 +397,13 @@ th.weekend {
 
 /* hover style rule for the table cells of the calendar */
 #calendar table td:hover {
-	background-color: blue;
+	background-color: #03AE8A;
 	color: white;
 }
 
 #calendar table td.currentdate {
-	border: solid thin blue;
+	background-color: blue;
+	color: white;
 }
 
 article#application {
